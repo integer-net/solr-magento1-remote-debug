@@ -26,6 +26,24 @@ class IntegerNet_SolrRemoteDebug_Model_Observer
         $this->_registerData($data);
     }
 
+    public function integernetSolrBeforeCategorySearchRequest(Varien_Event_Observer $observer)
+    {
+        $data = [
+            'title' => 'Category Search Request',
+            'content' => (array)$observer->getTransport(),
+        ];
+        $this->_registerData($data);
+    }
+
+    public function integernetSolrAfterCategorySearchRequest(Varien_Event_Observer $observer)
+    {
+        $data = [
+            'title' => 'Category Search Response',
+            'content' => (array)$observer->getResult(),
+        ];
+        $this->_registerData($data);
+    }
+
     /**
      * @param array $data
      */

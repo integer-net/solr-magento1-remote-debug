@@ -45,6 +45,24 @@
                     </integernet_solrremotedebug>
                 </observers>
             </integernet_solr_after_search_request>
+            <integernet_solr_before_category_search_request>
+                <observers>
+                    <integernet_solrremotedebug>
+                        <type>singleton</type>
+                        <class>integernet_solrremotedebug/observer</class>
+                        <method>integernetSolrBeforeCategorySearchRequest</method>
+                    </integernet_solrremotedebug>
+                </observers>
+            </integernet_solr_before_category_search_request>
+            <integernet_solr_after_category_search_request>
+                <observers>
+                    <integernet_solrremotedebug>
+                        <type>singleton</type>
+                        <class>integernet_solrremotedebug/observer</class>
+                        <method>integernetSolrAfterCategorySearchRequest</method>
+                    </integernet_solrremotedebug>
+                </observers>
+            </integernet_solr_after_category_search_request>
         </events>
     </frontend>
 </config>
