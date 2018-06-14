@@ -1,0 +1,4 @@
+src/app/code/community/IntegerNet/*                                 app/code/community/IntegerNet/
+src/app/design/frontend/base/default/layout/integernet/solr/*       app/design/frontend/base/default/layout/integernet/solr/
+src/app/design/frontend/base/default/template/integernet/solr/*     app/design/frontend/base/default/template/integernet/solr/
+src/app/etc/modules/*                                               app/etc/modules/

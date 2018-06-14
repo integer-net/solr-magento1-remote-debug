@@ -1,0 +1,9 @@
+<?php /* @var $this IntegerNet_SolrRemoteDebug_Block_Footer */ ?>
+<?php foreach ($this->getResponses() as $response): ?>
+
+    <h3><?php echo $response['title'] ?></h3>
+    <pre>
+        <?php print_r($response['content']) ?>
+    </pre>
+
+<?php endforeach ?>
